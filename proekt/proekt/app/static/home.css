@@ -1,0 +1,9 @@
+.back{
+    background: linear-gradient(90deg, rgb(0, 255, 166) 0%, rgb(255, 255, 0) 50%, rgb(255, 0, 0) 100%);
+}
+
+
+.ramka{
+ background: rgb(106, 90, 205);
+ border-radius: 5px;
+}

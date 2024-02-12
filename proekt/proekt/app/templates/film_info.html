@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+{%block content%}
+    <link href="/static/home.css" rel="stylesheet">
+<form method="post" enctype="multipart/form-data">
+    <div>
+    {{form.hidden_tag()}}
+    <p>{{form.name.label}} {{form.name(size=30)}}</p>
+    <p>{{form.text.label}} {{form.text(size=30)}}</p>
+    <p>{{form.actor.label}} {{form.actor (size=30)}}</p>
+    <p>{{form.genre.label}} {{form.genre(size=30)}}</p>
+    <p>{{form.data.label}} {{form.data(size=30)}}</p>
+    <p>{{form.rating.label}} {{form.rating (size=30)}}</p>
+    <p>{{form.time.label}} {{form.time(size=30)}}</p>
+    <p>{{form.photo.label}} {{form.photo}}</p>
+    <p>{{form.button.label}} {{form.button(size=30)}}</p>
+    </div>
+</form>
+{%endblock%}

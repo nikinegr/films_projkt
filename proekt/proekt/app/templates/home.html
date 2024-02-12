@@ -1,0 +1,16 @@
+{%extends 'base.html' %}
+{%block content%}
+
+
+    <a href="/Creat" class="ramka">Creat</a>
+    <a href="/Admin" class="ramka">Admin</a>
+    <a href="/Adminreg" class="ramka">Adminreg</a>
+    <a href="/filtres" class="ramka">Filtres</a>
+
+<div>
+    {% for i in al %}
+    <img src="{{i.photo}}">
+    <a href="/filminfo{{i.id}}"><h3>{{ i.name }}</h3></a>
+</div>
+{%endfor%}
+{%endblock%}
